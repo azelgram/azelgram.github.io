@@ -301,6 +301,9 @@ h1.body-title {
 	position: relative;
 	margin: 0 12px;
 }
+.artist-follow .disco {
+    margin-bottom: 5rem;
+}
 .disco:hover img {
     opacity: .3;
 }
@@ -475,6 +478,10 @@ div#btn1 {
 	}
 	.record img {
 		padding: 2rem 3rem;
+	}
+	.disco {
+		max-width: 90px;
+		max-height: 90px;
 	}
 	
 }
