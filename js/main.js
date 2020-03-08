@@ -16,6 +16,15 @@ $(document).ready(function(){
 		$(this).addClass('currentButton');
 	});
 	
+	$('body').on( 'click', '.actionButton', function() {
+		$([document.documentElement, document.body]).delay(300).animate({
+			scrollTop: $('.artist-body').offset().top
+		}, 500);
+	});
+	
+	
+	// Music Handlers
+	
 	$('.playSong').click(function(){
 		var $this = $(this);
 		var id = $this.attr('id').replace(/btn/, '');
@@ -27,6 +36,11 @@ $(document).ready(function(){
 			$this.text('play_arrow');
 			$('audio[id^="sound"]')[id-1].pause();
 		}
+	});
+	
+	$('#sound1').on('ended', function() {
+		$('.playSong').text('play_arrow');
+		$('.playSong').removeClass('active');
 	});
 
 });
