@@ -18,12 +18,20 @@ $(document).ready(function(){
     });
 	
 	$('body,document').on('click', '#fireLisences, .buy', function() {
-        $('.license-container').addClass('show-licenses');
-		$('body').addClass('noScroll');
-		$('#darkPane').addClass('show-darkPane');
 		
 		// Fix when pressed next song
 		$('.track.playing').each(function(i) {
+			
+			if($(this).find('.buy.display-none').length !== 0){
+				$('.error-purchase').addClass('show-buy-error');
+				$('body').addClass('noScroll');
+				$('#darkPane').addClass('show-darkPane');
+			} else {
+				$('.license-container').addClass('show-licenses');
+				$('body').addClass('noScroll');
+				$('#darkPane').addClass('show-darkPane');
+			}
+			
 			var BuyCode = $(this).find('.buy:first').attr('href');
 			var BuyTitle = $(this).find('.title:first').text();
 			$('#paypal-hosted-button').val(BuyCode);
@@ -59,10 +67,11 @@ $(document).ready(function(){
 	});
 	
 	// Dark Pane
-	$('#darkPane, #close-buyContainer').on('click', function() {
+	$('#darkPane, #close-buyContainer, .closeErrorBox').on('click', function() {
 		$('body').removeClass('noScroll');
 		$('.site-menu').removeClass('site-menu-open');
 		$('.license-container').removeClass('show-licenses');
+		$('.error-purchase').removeClass('show-buy-error');
 		$('.tracklist').removeClass('show-playlist');
 		$('#darkPane').removeClass('show-darkPane');
     });

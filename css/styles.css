@@ -535,7 +535,7 @@ body {
 }
 
 .ttw-music-player .buy:hover {
-    color: #eee;
+    color: #FFEB3B;
 }
 
 .ttw-music-player .buy.not-active{
@@ -643,6 +643,28 @@ body {
     border-radius: 3px;
     vertical-align: middle;
     margin-right: 10px;
+}
+
+.error-purchase {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 1rem 3rem;
+    z-index: 4;
+    background-color: #1d1d1d;
+    overflow: auto;
+    transform: translate(-50%, -50%) scale(.1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity .3s ease;
+}
+.show-buy-error {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .License-item {
@@ -818,6 +840,11 @@ body {
 	.license-container .description:before {
 		display: block;
 		margin: 0 auto 10px auto;
+	}
+	.error-purchase {
+		width: 80vw;
+		padding: 1rem;
+		line-height: normal;
 	}
 	.License-item {
 		margin: 0 0rem 2rem 0rem;
