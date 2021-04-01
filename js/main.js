@@ -43,6 +43,8 @@ $(document).ready(function(){
 	setTimeout(function(){
 		$('#paypal-hosted-button').val($('.tracks .track:first').find('.buy:first').attr('href'));
 		$('#buyTitle').text($('.tracks .track:first').find('.title:first').text());
+		
+		$('.tracks .track:first').addClass('playing'); // Fix for new verification for item availability
 	},1000);
 	
 	// Copies Buy Button values to final Buy Button
