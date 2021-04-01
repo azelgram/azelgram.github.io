@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: #1d1d1d;
+    /*background-color: #1d1d1d;*/
+	background-color: #000000;
 	color: #b8b8b8;
     padding: 0;
     margin: 0;
@@ -32,6 +33,10 @@ body {
 	-moz-user-select:none;
 	-ms-user-select:none;
 	user-select:none;
+}
+
+.display-none {
+    display: none !important;
 }
 
 #title{
@@ -402,6 +407,11 @@ body {
 .tracklist-header, .secondary-controls .togglePlaylist, #close-buyContainer {
     display: none;
 }
+
+#close-buyContainer {
+    margin-top: 1rem;
+}
+
 .ttw-music-player .tracklist {
     padding: 10px 20px;
     border-radius: 6px;
@@ -437,7 +447,7 @@ body {
 }
 
 .ttw-music-player li:last-child{
-    background: none;
+    border-bottom: none;
 }
 
 .ttw-music-player .show-more-button li:last-child{
@@ -800,9 +810,14 @@ body {
 	.license-container .description {
 		font-size: 11px;
 		line-height: 17px;
+		padding: 1rem;
 	}
 	.license-container {
-		height: 80vh;
+		height: 70vh;
+	}
+	.license-container .description:before {
+		display: block;
+		margin: 0 auto 10px auto;
 	}
 	.License-item {
 		margin: 0 0rem 2rem 0rem;

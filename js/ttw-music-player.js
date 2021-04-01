@@ -69,7 +69,7 @@
                 G = 0,
                 A, H;
             O = {
-                listItem: '<li class="track"><span class="title"></span><span class="duration"></span><span href="#" class="buy not-active" target="_blank"></span></li>',
+                listItem: '<li class="track"><span class="title"></span><span class="duration"></span><span href="#" class="buy not-active noSelect" target="_blank"></span></li>',
                 ratingBar: '<span class="rating-level rating-bar"></span>'
             };
 
@@ -214,12 +214,13 @@
                 A.animate({
                     height: E + G
                 }, function() {
-                    H.animate({
+                    H.remove();
+					H.animate({
                         opacity: 0
                     }, function() {
                         H.slideUp(function() {
                             H.parents(g.trackList).removeClass("show-more-button");
-                            H.remove()
+                            // H.remove() moved up
                         })
                     })
                 })
@@ -334,7 +335,7 @@
 								</div>\
 								<div class="secondary-controls">\
 									<div class="togglePlaylist material-icons noSelect">queue_music</div>\
-									<div id="fireLisences" class="buyCurrentBeat" target="_blank" data-purchase="">BUY NOW</div>\
+									<div id="fireLisences" class="buyCurrentBeat noSelect" target="_blank" data-purchase="">BUY NOW</div>\
 								</div>\
 								<!-- These controls aren\'t used by this plugin, but jPlayer seems to require that they exist -->\
 								<span class="unused-controls">\

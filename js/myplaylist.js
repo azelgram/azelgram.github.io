@@ -20,17 +20,6 @@ var myPlaylist = [
         oga:'https://docs.google.com/uc?export=download&id=1UEGhfz80Vb6BGJAF6NfN-6X2wqeRiwls'
     },
 	{
-        title:'Trap Rock (Vocals Visualizer)',
-        artist:'Azel Chun',
-        rating:4,
-        buy:'RKTEVJNXTCZGG',
-        price:'25',
-        duration:'150bpm',
-        cover:'mix/1.jpg',
-		mp3:'https://docs.google.com/uc?export=download&id=1IFryCCLkPOzq7yCeoiMAgoLQ6fvZBLW7',
-        oga:'https://docs.google.com/uc?export=download&id=1IFryCCLkPOzq7yCeoiMAgoLQ6fvZBLW7'
-    },
-	{
         title:'Martian Cashier (Megan Thee Stallion Type Beat)',
         artist:'Azelgram',
         rating:3,
@@ -40,17 +29,6 @@ var myPlaylist = [
         cover:'mix/2.jpg',
 		mp3:'https://docs.google.com/uc?export=download&id=17xC2Fj2p4d5EN4blcY8qm8iXiMmq-J-v',
         oga:'https://docs.google.com/uc?export=download&id=17xC2Fj2p4d5EN4blcY8qm8iXiMmq-J-v'
-    },
-	{
-        title:'Martian Cashier (Vocals Visualizer)',
-        artist:'Azelgram',
-        rating:3,
-        buy:'#',
-        price:'25',
-        duration:'140bpm',
-        cover:'mix/2.jpg',
-		mp3:'https://docs.google.com/uc?export=download&id=1JNGUDt5-MEKldzp-zkdWjXMaGZ-yKy6H',
-        oga:'https://docs.google.com/uc?export=download&id=1JNGUDt5-MEKldzp-zkdWjXMaGZ-yKy6H'
     },
     {
         title:'Gucci Bands (Gucci Mane Type Beat)',

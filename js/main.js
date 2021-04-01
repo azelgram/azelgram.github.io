@@ -127,6 +127,17 @@ $(document).ready(function(){
 		$('#darkPane').addClass('show-darkPane');
     });
 	
+	// Detect if list item has no price
+	setTimeout(function(){
+		var matches = $('li.track .buy').filter(function() {
+			if( !/[0-9]/.test( $(this).text() )){
+			
+				$(this).addClass('display-none');
+			}
+		});
+		matches();
+	},500);
+	
 	
 });
 
