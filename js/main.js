@@ -132,9 +132,11 @@ $(document).ready(function(){
 		},1000);
 	});
 	
+	// Menu
 	$('#menu-trigger').on('click', function() {
 		$('body').addClass('noScroll');
 		$('.site-menu').addClass('site-menu-open');
+		$('.license-container').removeClass('show-licenses');
 		$('#darkPane').addClass('show-darkPane');
     });
 	
