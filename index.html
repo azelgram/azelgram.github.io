@@ -55,104 +55,109 @@
 
 	<body>
 	
-		<div id="menu-trigger" class="material-icons noSelect">menu</div>
-		<div class="site-menu">
-			<ul>
-				<li><a href="https://instagram.com/azelgram" target="_blank">Instagram</a></li>
-				<li><a href="https://www.youtube.com/channel/UCRFLLStR0coNz59iI8NVYAQ" target="_blank">YouTube</a></li>
-				<li><a href="https://linktr.ee/azelgram" target="_blank">Other Links</a></li>
-				<li><span class="rollText contactMe">Contact Me</span></li>
-			</ul>
-		</div>
-		
-		<div id="beatPlaylist"></div>
-		
-		<!-- Beat Licenses -->
-		<div class="license-container">
-			
-			<div id="close-buyContainer">
-				<div class="material-icons">close</div>
-			</div>
-			<h1 class="section-title">Licenses</h1>
-			<p class="description showing">After completing the payment steps on PayPal, please wait until the download automatically starts. DO NOT close the window right away.</p>
-			
-			<!-- Lease -->
-			<div class="License-item">
-				<h2>Lease</h2>
-				<hr class="license-hr"/>
+		<div id="mainContent">
+			<div id="menu-trigger" class="material-icons noSelect">menu</div>
+			<div class="site-menu">
 				<ul>
-					<li>Untagged .MP3 File</li>
-					<li>Non-Exclusive Rights</li>
-					<li>Instant file download</li>
-                    <li>Up to 2,500 Streams</li>
-					<li>No Music Video</li>
-                    <li>Artist must credit Producer:<br/> "Prod. by Azelgram"</li>
-                </ul>
-				<div class="licenseBuy-wrapper"><span class="licenseBuy buyCurrentBeat noSelect">PURCHASE LICENSE</span></div>
-				<h2 class="licensePrice">25€</h2>
+					<li><a href="https://instagram.com/azelgram" target="_blank">Instagram</a></li>
+					<li><a href="https://www.youtube.com/channel/UCRFLLStR0coNz59iI8NVYAQ" target="_blank">YouTube</a></li>
+					<li><a href="https://linktr.ee/azelgram" target="_blank">Other Links</a></li>
+					<li><span class="rollText contactMe">Contact Me</span></li>
+				</ul>
 			</div>
 			
-			<!-- Boosted -->
-			<div class="License-item">
-				<h2>Boosted</h2>
-				<hr class="license-hr"/>
-				<ul>
-					<li>Untagged .WAV File</li>
-					<li>Non-Exclusive Rights</li>
-					<li>Instant MP3 file download<br/>(WAV file will be shipped manually within 24h)</li>
-					<li>Music Video Allowed</li>
-                    <li>Unlimited Streams</li>
-                    <li>Artist must credit Producer:<br/> "Prod. by Azelgram"</li>
-                </ul>
-				<div class="licenseBuy-wrapper"><span class="licenseBuy buyCurrentBeat noSelect">PURCHASE LICENSE</span></div>
-				<h2 class="licensePrice">125€</h2>
-			</div>
+			<div id="beatPlaylist"></div>
 			
-			<!-- Exclusive -->
-			<div class="License-item">
-				<h2>Exclusive</h2>
-				<hr class="license-hr"/>
-				<ul>
-					<li>Untagged .WAV File</li>
-                    <li>Exclusive Rights</li>
-					<li>Trackouts</li>
-                    <li>Unlimited Streams</li>
-                    <li>Artist must credit Producer:<br/> "Prod. by Azelgram"</li>
-                </ul>
-				<div class="licenseBuy-wrapper"><span class="licenseBuy-exclusive ">This license can only be sold once.<br/>Get in touch via email to purchase it.</span></div>
-				<span>Click on menu icon (<span class="material-icons">menu</span>) for contact</span>
-				<h2 class="licensePrice">500€</h2>
-			</div>
-			
-			<div id="buyContainer">
-				<div id="buyButton">
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="" id="paypal-hosted-button">
-						<table>
-						<tr><td><input type="hidden" name="on0" value="Choose your License">Choose your License</td></tr><tr><td><select name="os0">
-							<option value="Lease">Lease €25,00 EUR</option>
-							<option value="Boosted">Boosted €125,00 EUR</option>
-						</select> </td></tr>
-						</table>
-						<h3 id="buyTitle"></h3>
-						<input type="hidden" name="currency_code" value="EUR">
-						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-						<img alt="" border="0" src="https://www.paypalobjects.com/pt_PT/i/scr/pixel.gif" width="1" height="1">
-					</form>
+			<!-- Beat Licenses -->
+			<div class="license-container">
+				
+				<div id="close-buyContainer">
+					<div class="material-icons">close</div>
 				</div>
+				<h1 class="section-title">Licenses</h1>
+				<p class="description showing">After completing the payment steps on PayPal, please wait until the download automatically starts. DO NOT close the window right away.</p>
+				
+				<!-- Lease -->
+				<div class="License-item">
+					<h2>Lease</h2>
+					<hr class="license-hr"/>
+					<ul>
+						<li>Untagged .MP3 File</li>
+						<li>Non-Exclusive Rights</li>
+						<li>Instant file download</li>
+						<li>Up to 2,500 Streams</li>
+						<li>No Music Video</li>
+						<li>Artist must credit Producer:<br/> "Prod. by Azelgram"</li>
+					</ul>
+					<div class="licenseBuy-wrapper"><span class="licenseBuy buyCurrentBeat noSelect">PURCHASE LICENSE</span></div>
+					<h2 class="licensePrice">25€</h2>
+				</div>
+				
+				<!-- Boosted -->
+				<div class="License-item">
+					<h2>Boosted</h2>
+					<hr class="license-hr"/>
+					<ul>
+						<li>Untagged .WAV File</li>
+						<li>Non-Exclusive Rights</li>
+						<li>Instant MP3 file download<br/>(WAV file will be shipped manually within 24h)</li>
+						<li>Music Video Allowed</li>
+						<li>Unlimited Streams</li>
+						<li>Artist must credit Producer:<br/> "Prod. by Azelgram"</li>
+					</ul>
+					<div class="licenseBuy-wrapper"><span class="licenseBuy buyCurrentBeat noSelect">PURCHASE LICENSE</span></div>
+					<h2 class="licensePrice">125€</h2>
+				</div>
+				
+				<!-- Exclusive -->
+				<div class="License-item">
+					<h2>Exclusive</h2>
+					<hr class="license-hr"/>
+					<ul>
+						<li>Untagged .WAV File</li>
+						<li>Exclusive Rights</li>
+						<li>Trackouts</li>
+						<li>Unlimited Streams</li>
+						<li>Artist must credit Producer:<br/> "Prod. by Azelgram"</li>
+					</ul>
+					<div class="licenseBuy-wrapper"><span class="licenseBuy-exclusive ">This license can only be sold once.<br/>Pls contact via email to purchase it.</span></div>
+					<span>Click on menu icon (<span class="material-icons">menu</span>) for contact</span>
+					<h2 class="licensePrice">500€</h2>
+				</div>
+				
+				<div id="buyContainer">
+					<div id="buyButton">
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="" id="paypal-hosted-button">
+							<table>
+							<tr><td><input type="hidden" name="on0" value="Choose your License">Choose your License</td></tr><tr><td><select name="os0">
+								<option value="Lease">Lease €25,00 EUR</option>
+								<option value="Boosted">Boosted €125,00 EUR</option>
+							</select> </td></tr>
+							</table>
+							<h3 id="buyTitle"></h3>
+							<input type="hidden" name="currency_code" value="EUR">
+							<button class="licenseBuy buyCurrentBeat noSelect" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">BUY NOW</button>
+							<img alt="" border="0" src="https://www.paypalobjects.com/pt_PT/i/scr/pixel.gif" width="1" height="1">
+						</form>
+					</div>
+				</div>
+				<div id="buyScrollPoint"></div>
+				
 			</div>
-			<div id="buyScrollPoint"></div>
 			
-		</div>
+			<!-- Error Message -->
+			<div class="error-purchase">
+				<span class="closeErrorBox material-icons noSelect">close</span>
+				<h2 class="error-purchase-title">This item is no longer available for purchase!</h2>
+			</div>
+			
+			<div id="darkPane"></div>
 		
-		<!-- Error Message -->
-		<div class="error-purchase">
-			<span class="closeErrorBox material-icons noSelect">close</span>
-			<h2 class="error-purchase-title">This item is no longer available for purchase!</h2>
-		</div>
-		
-		<div id="darkPane"></div>
+		</div> <!-- Main Content -->
+
+		<div id="bgPane"></div>
 		
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-65621075-8"></script>

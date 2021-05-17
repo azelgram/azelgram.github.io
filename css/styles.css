@@ -69,6 +69,7 @@ body {
     left: 1rem;
     padding: .5rem;
 	z-index: 4;
+	color: #ffffff;
 }
 
 .site-menu {
@@ -103,7 +104,7 @@ body {
 }
 
 .site-menu li a {
-    color: #ffffff;
+    color: #c0c1c1;
     text-decoration: none;
 }
 
@@ -317,6 +318,14 @@ body {
 	position: absolute;
     right: 0;
     top: 7px;
+}
+
+#buyButton .buyCurrentBeat {
+    margin-top: 1rem;
+	border: 0;
+    font-size: 13px;
+	font-weight: bold;
+    padding: 9px 19px;
 }
 
 .progress-container {
@@ -751,7 +760,7 @@ body {
 }
 
 #buyContainer {
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
 }
 
 #buyContainer select {
@@ -816,6 +825,24 @@ body {
   /* Support for IE. */
   font-feature-settings: 'liga';
   cursor: pointer;
+}
+
+
+#mainContent {
+    position: relative;
+    z-index: 3;
+}
+
+#bgPane {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://producerthemes.com/demo/thered/wp-content/uploads/2020/09/header-bg-5.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+	opacity: 0.3;
 }
 
 @media only screen and (max-width: 600px) {
