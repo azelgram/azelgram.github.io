@@ -9,6 +9,17 @@
 var myPlaylist = [
 
 	{
+        title:'[FREE] Funkylicious',
+        artist:'Azelgram',
+        rating:4,
+        buy:'',
+        price:'',
+        duration:'95bpm',
+        cover:'covers/Untitled-15.jpg',
+		mp3:'https://docs.google.com/uc?export=download&id=1FrazR5nSODJeFo5qZlgQM_RKpW4EUj3x',
+        oga:'https://docs.google.com/uc?export=download&id=1FrazR5nSODJeFo5qZlgQM_RKpW4EUj3x'
+    },
+	{
         title:'Trap Rock',
         artist:'Azelgram',
         rating:4,
@@ -42,7 +53,7 @@ var myPlaylist = [
         oga:'https://docs.google.com/uc?export=download&id=1m-uOCa5-uz6aT0IeSlkc5eS0S5QxSTmi'
     },
     {
-        title:'[Sold] Heat the Bass',
+        title:'[SOLD] Heat the Bass',
         artist:'Azelgram',
         rating:2,
         buy:'',
@@ -53,7 +64,7 @@ var myPlaylist = [
         oga:'https://docs.google.com/uc?export=download&id=15smUh6x_3MtHyOCVQ5NnP3iTxtARyeHV'
     },
     {
-        title:'[Sold] Purple Vibes (Wale, Wiz Khalifa Type Beat)',
+        title:'[ON HOLD] Purple Vibes (Wale, Wiz Khalifa Type Beat)',
         artist:'Azelgram',
         rating:5,
         buy:'',
